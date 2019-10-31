@@ -23,4 +23,9 @@ public class Bank {
             return this.accounts.get(accountId);
         throw new IllegalArgumentException("This account does not exist.");
     }
+
+    public boolean AccountExists(int accountId) {
+        if(this.accounts.containsKey(accountId)) return true;
+        else return false;
+    }
 }

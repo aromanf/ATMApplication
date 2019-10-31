@@ -20,4 +20,20 @@ public class Account {
     public int getID() {
         return accountID;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void depositToCheckingsAccount(int amount) {
+        this.checkingBalance += amount;
+    }
+
+    public int getCheckingBalance() {
+        return checkingBalance;
+    }
+
+    public int getSavingsBalance() {
+        return savingsBalance;
+    }
 }
